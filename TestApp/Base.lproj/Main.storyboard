@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kjv-ar-3NO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOk-iY-qVi">
+                                <rect key="frame" x="121" y="432.5" width="172" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Open UIViewController"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EC-lS-uTV">
+                                <rect key="frame" x="20" y="471.5" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Open UITableViewController"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUv-qe-G18">
+                                <rect key="frame" x="20" y="510.5" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Open UICollectionViewController"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uE4-bZ-7Cx">
+                                <rect key="frame" x="20" y="282" width="374" height="142.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="The problem happens only when there's a scrollable content inside ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="UIViewController">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.22207552103151307" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" and not in ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="UITableViewController">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.22207552103151307" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" or ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="UICollectionViewController">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.22207552103151307" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">.
+Open one of the options, scroll down to the bottom and tap Status Bar, it result in unwanted space below large  title in </string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="UIViewController">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.22207552103151307" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=".">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uUv-qe-G18" firstAttribute="top" secondItem="1EC-lS-uTV" secondAttribute="bottom" constant="8" id="3vZ-t5-uce"/>
+                            <constraint firstItem="NOk-iY-qVi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4bh-hk-Yuh"/>
+                            <constraint firstItem="uE4-bZ-7Cx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Bad-DF-OEI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uUv-qe-G18" secondAttribute="trailing" constant="20" id="DFt-0O-fS7"/>
+                            <constraint firstItem="NOk-iY-qVi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GTu-dj-RQZ"/>
+                            <constraint firstItem="1EC-lS-uTV" firstAttribute="top" secondItem="NOk-iY-qVi" secondAttribute="bottom" constant="8" id="KYo-OE-sXI"/>
+                            <constraint firstItem="1EC-lS-uTV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="W1k-OC-Vi0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uE4-bZ-7Cx" secondAttribute="trailing" constant="20" id="e3Q-zm-NGa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1EC-lS-uTV" secondAttribute="trailing" constant="20" id="e5e-kY-xes"/>
+                            <constraint firstItem="uUv-qe-G18" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hJQ-Ch-JF5"/>
+                            <constraint firstItem="NOk-iY-qVi" firstAttribute="top" secondItem="uE4-bZ-7Cx" secondAttribute="bottom" constant="8" id="qmb-3o-kO1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" largeTitleDisplayMode="always" id="tAh-vY-KHn"/>
+                    <connections>
+                        <outlet property="buttonAction" destination="NOk-iY-qVi" id="9sX-4d-kgM"/>
+                        <outlet property="buttonCollectionViewController" destination="uUv-qe-G18" id="WVT-Z6-fuP"/>
+                        <outlet property="buttonTableViewController" destination="1EC-lS-uTV" id="3Zm-7J-MHd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="130.58035714285714"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="ZCC-KV-yCi">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="zZg-Ev-AlA" customClass="DetailViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WE6-fa-V2g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2R1-di-rwO">
+                                <rect key="frame" x="20" y="64" width="374" height="798"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="er8-qg-uea">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="3063.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIK-k5-Z9P">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="3063.5"/>
+                                                <mutableString key="text">Scroll down to the bottom and tap status bar
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a ante hendrerit, facilisis leo in, imperdiet tortor. Mauris ullamcorper mauris a metus bibendum consectetur a vel arcu. Phasellus finibus a tortor ut rutrum. Integer placerat sed nisi vel maximus. Nulla laoreet ante vitae ipsum convallis, vel semper dui blandit. Mauris nec consequat turpis. Vestibulum vitae nisl sodales, cursus odio eget, accumsan lectus. Ut hendrerit rhoncus nulla, sit amet lobortis massa molestie a. Sed pellentesque porttitor ante eget dignissim. Vestibulum a suscipit tortor, molestie luctus nunc.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras et aliquet massa, sed semper augue. Etiam porttitor ultrices augue, id aliquet lectus aliquet sed. Donec felis turpis, convallis eget suscipit vel, finibus nec nibh. Morbi sed mauris ac velit placerat condimentum. Pellentesque aliquet erat ipsum, non ultricies libero vehicula at. Nullam non felis faucibus, viverra lacus at, mollis metus. Nulla tincidunt et massa non fringilla. Fusce sit amet lectus sit amet nibh interdum tincidunt. Morbi sit amet consequat felis. Suspendisse potenti. Duis viverra purus purus, volutpat rhoncus nibh interdum nec. Morbi at ullamcorper tellus. Vestibulum eu congue quam.
+
+Mauris a imperdiet mi. Cras vestibulum commodo nibh, sed ultrices diam interdum a. Fusce volutpat ex in mi mattis pharetra. Aenean at maximus nisl. Proin iaculis orci id nisi mattis vehicula nec placerat leo. Integer molestie elementum tellus. Nulla efficitur dui nec sem fermentum, vel pharetra arcu placerat. In vel turpis et mi imperdiet dapibus. Vivamus non nisl a ipsum hendrerit venenatis vitae quis justo. Aenean sodales commodo vulputate. In vestibulum blandit facilisis. Proin sollicitudin leo id dolor maximus, vel iaculis lacus scelerisque. Mauris et diam mauris.
+
+In a egestas metus, sit amet molestie neque. Vivamus quis arcu eu orci accumsan porta et et dolor. Duis a sapien hendrerit, tincidunt arcu quis, vulputate urna. Quisque sed orci convallis, cursus dolor ac, elementum mi. Vivamus at augue massa. Vivamus nec sapien non nulla imperdiet gravida sed sit amet dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Aliquam sagittis placerat risus eget varius. Vivamus non magna at odio volutpat aliquet. Sed nec sem volutpat, vehicula ipsum vitae, mollis velit. Pellentesque purus neque, vulputate vitae turpis nec, bibendum vestibulum diam. Mauris cursus nibh augue, non tincidunt enim sollicitudin eget. Nulla facilisi. Mauris ac erat ante. Quisque in justo lobortis, rutrum ex eu, ultrices urna. Aliquam eleifend nisl et tristique mattis. Maecenas suscipit dui sem, vel pretium nisi venenatis id. Praesent mauris libero, posuere et interdum ac, pharetra nec turpis. Nullam rutrum tortor eu dui vulputate auctor. Nam id placerat sapien.
+
+Fusce vel porttitor magna. Aenean dignissim laoreet nunc vitae scelerisque. Nunc eros dui, feugiat non venenatis non, suscipit sed purus. Sed vel elit faucibus, dictum eros eu, commodo dui. Proin purus dolor, congue in porta id, ullamcorper quis metus. Nam eget velit venenatis, condimentum elit tempus, sodales ipsum. Nullam at euismod massa. Sed pretium velit lectus, vel molestie sapien ultricies vel. Pellentesque in mauris ac nibh hendrerit dictum vitae eu ipsum. Aenean non nisl et mi sagittis lobortis. Nullam eleifend eros sit amet orci pretium tempus. Praesent sapien urna, faucibus a semper a, feugiat sed dolor. Aliquam arcu eros, imperdiet vel libero id, tincidunt varius elit. Vestibulum vel tellus nec ligula vestibulum tincidunt eu ac nulla. Aliquam ac ex pretium eros elementum tristique.
+
+Integer viverra eleifend lobortis. Mauris ultrices turpis ac dolor fringilla rutrum. Morbi ut tellus elementum, efficitur justo quis, dapibus lectus. Quisque nisi nisl, convallis ut leo et, finibus fermentum urna. Vestibulum facilisis ex non aliquet semper. Nam malesuada rutrum est, ac luctus lorem tincidunt nec. Mauris tempor varius auctor. Donec luctus enim neque, id condimentum quam euismod eget. Fusce interdum, est nec molestie accumsan, eros leo tristique nulla, at imperdiet neque lorem eu turpis. Fusce sit amet sagittis tortor. Nullam sit amet odio id quam ultricies interdum in vel lorem. Suspendisse auctor, velit eget volutpat euismod, magna tellus semper felis, vitae vulputate libero metus ac lacus. Cras nec nisl sed nisi dictum hendrerit at at enim. Morbi at tellus in urna sodales varius vitae eu augue. Aliquam mollis, enim in posuere porta, quam dui tristique mauris, eget aliquet lorem magna vel mauris. Nullam non porta mauris, eget gravida sem.
+
+Aenean ante mi, dapibus blandit pellentesque at, tempor non massa. Nullam et pretium leo. Vivamus faucibus tristique diam, molestie tempus orci congue vitae. Morbi viverra feugiat lectus, ut molestie lorem accumsan sit amet. Vestibulum aliquet pellentesque mattis. Nulla imperdiet a ante at fermentum. Curabitur a ultricies diam, ut accumsan magna. Etiam nec tristique erat, vel scelerisque metus. Ut lacinia leo nisl, vitae pellentesque lorem lobortis in. Ut sed massa eleifend, euismod leo pretium, tempor orci. Proin ac lacus congue, fermentum tortor at, commodo felis. Fusce vel orci ac nisl porttitor posuere. In hac habitasse platea dictumst.
+
+Integer mollis urna a mauris ornare tristique. Nunc posuere erat a sapien aliquet, non posuere nunc pharetra. Praesent ut urna feugiat, ornare risus ac, mattis tellus. Phasellus eleifend sodales velit a elementum. Vivamus ultrices est nec molestie pretium. Etiam laoreet rhoncus sapien. Nullam at erat vitae turpis elementum maximus. Suspendisse potenti. Suspendisse pretium lectus non neque ornare, id fermentum lorem placerat. Aliquam lacinia odio at sapien tincidunt, eget ultrices augue fermentum.
+
+Mauris suscipit, dui sit amet lacinia viverra, mi ligula porta ante, et vestibulum dolor mauris tincidunt odio. Sed bibendum finibus erat, sit amet tempor arcu vulputate eu. Duis maximus augue non nibh tincidunt finibus. Integer ut ultrices tortor. In hac habitasse platea dictumst. Donec cursus massa quam, eu finibus nulla vehicula nec. Donec leo magna, faucibus vitae metus ac, porta vulputate leo. Aliquam nec tellus nec nibh semper tempus a eget neque. Quisque quis odio tempus, imperdiet lacus quis, porttitor massa.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="er8-qg-uea" firstAttribute="leading" secondItem="g1d-AD-cn6" secondAttribute="leading" id="Dfp-eQ-gJG"/>
+                                    <constraint firstItem="er8-qg-uea" firstAttribute="top" secondItem="g1d-AD-cn6" secondAttribute="top" id="DrC-x8-z8B"/>
+                                    <constraint firstItem="er8-qg-uea" firstAttribute="trailing" secondItem="g1d-AD-cn6" secondAttribute="trailing" id="k75-eH-gMd"/>
+                                    <constraint firstItem="er8-qg-uea" firstAttribute="bottom" secondItem="g1d-AD-cn6" secondAttribute="bottom" id="nvb-W1-KrZ"/>
+                                    <constraint firstItem="er8-qg-uea" firstAttribute="width" secondItem="yPF-1A-TjD" secondAttribute="width" id="qxB-cI-uN1"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="g1d-AD-cn6"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="yPF-1A-TjD"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9du-qy-6Lp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2R1-di-rwO" firstAttribute="top" secondItem="9du-qy-6Lp" secondAttribute="top" constant="20" id="3rW-A2-fL4"/>
+                            <constraint firstItem="2R1-di-rwO" firstAttribute="leading" secondItem="9du-qy-6Lp" secondAttribute="leading" constant="20" id="5YY-8Z-Bg3"/>
+                            <constraint firstItem="9du-qy-6Lp" firstAttribute="bottom" secondItem="2R1-di-rwO" secondAttribute="bottom" id="dZi-yo-0HK"/>
+                            <constraint firstItem="9du-qy-6Lp" firstAttribute="trailing" secondItem="2R1-di-rwO" secondAttribute="trailing" constant="20" id="mc3-u4-LHq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail" id="zXL-8p-cKh"/>
+                    <connections>
+                        <outlet property="scrollView" destination="2R1-di-rwO" id="3qV-Cc-iUi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Jm-ni-ssP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1744.9275362318842" y="130.58035714285714"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="ESb-aF-drb">
+            <objects>
+                <tableViewController storyboardIdentifier="TableViewController" id="CVJ-cB-VAw" customClass="TableViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="KG6-En-H54">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="614-Mc-Eeb">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="614-Mc-Eeb" id="lhG-vw-ncQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="CVJ-cB-VAw" id="v4c-E6-zH1"/>
+                            <outlet property="delegate" destination="CVJ-cB-VAw" id="wqD-UZ-oDA"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ljc-xV-QSG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2397" y="131"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="9rx-Wc-kvS">
+            <objects>
+                <collectionViewController storyboardIdentifier="CollectionViewController" id="tVu-el-Hf9" customClass="CollectionViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="t68-nm-ZXq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ggP-CW-sFs">
+                            <size key="itemSize" width="396" height="795"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="9wh-ml-r8q" customClass="CollectionViewCell" customModule="TestApp" customModuleProvider="target">
+                                <rect key="frame" x="9" y="0.0" width="396" height="795"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cXS-Bw-bYY">
+                                    <rect key="frame" x="0.0" y="0.0" width="396" height="795"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDF-Wt-FIq">
+                                            <rect key="frame" x="20" y="20" width="356" height="755"/>
+                                            <mutableString key="text">Scroll down to the bottom and tap status bar
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a ante hendrerit, facilisis leo in, imperdiet tortor. Mauris ullamcorper mauris a metus bibendum consectetur a vel arcu. Phasellus finibus a tortor ut rutrum. Integer placerat sed nisi vel maximus. Nulla laoreet ante vitae ipsum convallis, vel semper dui blandit. Mauris nec consequat turpis. Vestibulum vitae nisl sodales, cursus odio eget, accumsan lectus. Ut hendrerit rhoncus nulla, sit amet lobortis massa molestie a. Sed pellentesque porttitor ante eget dignissim. Vestibulum a suscipit tortor, molestie luctus nunc.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras et aliquet massa, sed semper augue. Etiam porttitor ultrices augue, id aliquet lectus aliquet sed. Donec felis turpis, convallis eget suscipit vel, finibus nec nibh. Morbi sed mauris ac velit placerat condimentum. Pellentesque aliquet erat ipsum, non ultricies libero vehicula at. Nullam non felis faucibus, viverra lacus at, mollis metus. Nulla tincidunt et massa non fringilla. Fusce sit amet lectus sit amet nibh interdum tincidunt. Morbi sit amet consequat felis. Suspendisse potenti. Duis viverra purus purus, volutpat rhoncus nibh interdum nec. Morbi at ullamcorper tellus. Vestibulum eu congue quam.
+
+Mauris a imperdiet mi. Cras vestibulum commodo nibh, sed ultrices diam interdum a. Fusce volutpat ex in mi mattis pharetra. Aenean at maximus nisl. Proin iaculis orci id nisi mattis vehicula nec placerat leo. Integer molestie elementum tellus. Nulla efficitur dui nec sem fermentum, vel pharetra arcu placerat. In vel turpis et mi imperdiet dapibus. Vivamus non nisl a ipsum hendrerit venenatis vitae quis justo. Aenean sodales commodo vulputate. In vestibulum blandit facilisis. Proin sollicitudin leo id dolor maximus, vel iaculis lacus scelerisque. Mauris et diam mauris.
+
+In a egestas metus, sit amet molestie neque. Vivamus quis arcu eu orci accumsan porta et et dolor. Duis a sapien hendrerit, tincidunt arcu quis, vulputate urna. Quisque sed orci convallis, cursus dolor ac, elementum mi. Vivamus at augue massa. Vivamus nec sapien non nulla imperdiet gravida sed sit amet dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Aliquam sagittis placerat risus eget varius. Vivamus non magna at odio volutpat aliquet. Sed nec sem volutpat, vehicula ipsum vitae, mollis velit. Pellentesque purus neque, vulputate vitae turpis nec, bibendum vestibulum diam. Mauris cursus nibh augue, non tincidunt enim sollicitudin eget. Nulla facilisi. Mauris ac erat ante. Quisque in justo lobortis, rutrum ex eu, ultrices urna. Aliquam eleifend nisl et tristique mattis. Maecenas suscipit dui sem, vel pretium nisi venenatis id. Praesent mauris libero, posuere et interdum ac, pharetra nec turpis. Nullam rutrum tortor eu dui vulputate auctor. Nam id placerat sapien.
+
+Fusce vel porttitor magna. Aenean dignissim laoreet nunc vitae scelerisque. Nunc eros dui, feugiat non venenatis non, suscipit sed purus. Sed vel elit faucibus, dictum eros eu, commodo dui. Proin purus dolor, congue in porta id, ullamcorper quis metus. Nam eget velit venenatis, condimentum elit tempus, sodales ipsum. Nullam at euismod massa. Sed pretium velit lectus, vel molestie sapien ultricies vel. Pellentesque in mauris ac nibh hendrerit dictum vitae eu ipsum. Aenean non nisl et mi sagittis lobortis. Nullam eleifend eros sit amet orci pretium tempus. Praesent sapien urna, faucibus a semper a, feugiat sed dolor. Aliquam arcu eros, imperdiet vel libero id, tincidunt varius elit. Vestibulum vel tellus nec ligula vestibulum tincidunt eu ac nulla. Aliquam ac ex pretium eros elementum tristique.
+
+Integer viverra eleifend lobortis. Mauris ultrices turpis ac dolor fringilla rutrum. Morbi ut tellus elementum, efficitur justo quis, dapibus lectus. Quisque nisi nisl, convallis ut leo et, finibus fermentum urna. Vestibulum facilisis ex non aliquet semper. Nam malesuada rutrum est, ac luctus lorem tincidunt nec. Mauris tempor varius auctor. Donec luctus enim neque, id condimentum quam euismod eget. Fusce interdum, est nec molestie accumsan, eros leo tristique nulla, at imperdiet neque lorem eu turpis. Fusce sit amet sagittis tortor. Nullam sit amet odio id quam ultricies interdum in vel lorem. Suspendisse auctor, velit eget volutpat euismod, magna tellus semper felis, vitae vulputate libero metus ac lacus. Cras nec nisl sed nisi dictum hendrerit at at enim. Morbi at tellus in urna sodales varius vitae eu augue. Aliquam mollis, enim in posuere porta, quam dui tristique mauris, eget aliquet lorem magna vel mauris. Nullam non porta mauris, eget gravida sem.
+
+Aenean ante mi, dapibus blandit pellentesque at, tempor non massa. Nullam et pretium leo. Vivamus faucibus tristique diam, molestie tempus orci congue vitae. Morbi viverra feugiat lectus, ut molestie lorem accumsan sit amet. Vestibulum aliquet pellentesque mattis. Nulla imperdiet a ante at fermentum. Curabitur a ultricies diam, ut accumsan magna. Etiam nec tristique erat, vel scelerisque metus. Ut lacinia leo nisl, vitae pellentesque lorem lobortis in. Ut sed massa eleifend, euismod leo pretium, tempor orci. Proin ac lacus congue, fermentum tortor at, commodo felis. Fusce vel orci ac nisl porttitor posuere. In hac habitasse platea dictumst.
+
+Integer mollis urna a mauris ornare tristique. Nunc posuere erat a sapien aliquet, non posuere nunc pharetra. Praesent ut urna feugiat, ornare risus ac, mattis tellus. Phasellus eleifend sodales velit a elementum. Vivamus ultrices est nec molestie pretium. Etiam laoreet rhoncus sapien. Nullam at erat vitae turpis elementum maximus. Suspendisse potenti. Suspendisse pretium lectus non neque ornare, id fermentum lorem placerat. Aliquam lacinia odio at sapien tincidunt, eget ultrices augue fermentum.
+
+Mauris suscipit, dui sit amet lacinia viverra, mi ligula porta ante, et vestibulum dolor mauris tincidunt odio. Sed bibendum finibus erat, sit amet tempor arcu vulputate eu. Duis maximus augue non nibh tincidunt finibus. Integer ut ultrices tortor. In hac habitasse platea dictumst. Donec cursus massa quam, eu finibus nulla vehicula nec. Donec leo magna, faucibus vitae metus ac, porta vulputate leo. Aliquam nec tellus nec nibh semper tempus a eget neque. Quisque quis odio tempus, imperdiet lacus quis, porttitor massa.</mutableString>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="wDF-Wt-FIq" firstAttribute="top" secondItem="cXS-Bw-bYY" secondAttribute="top" constant="20" id="8GP-LR-JhI"/>
+                                        <constraint firstItem="wDF-Wt-FIq" firstAttribute="leading" secondItem="cXS-Bw-bYY" secondAttribute="leading" constant="20" id="IOv-KI-tzu"/>
+                                        <constraint firstAttribute="bottom" secondItem="wDF-Wt-FIq" secondAttribute="bottom" constant="20" id="ceo-Nv-gt1"/>
+                                        <constraint firstAttribute="trailing" secondItem="wDF-Wt-FIq" secondAttribute="trailing" constant="20" id="t3E-eB-0aM"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="396" height="795"/>
+                                <connections>
+                                    <outlet property="textLabel" destination="wDF-Wt-FIq" id="wih-Jd-GaW"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="tVu-el-Hf9" id="PRU-nd-SlS"/>
+                            <outlet property="delegate" destination="tVu-el-Hf9" id="EcJ-fy-nX7"/>
+                        </connections>
+                    </collectionView>
+                    <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="txG-wC-Ngd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3040.579710144928" y="130.58035714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Ke-fX-qsE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kjv-ar-3NO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="np9-Bo-3kp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vlc-Km-EYV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YOu-yg-RDc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
